@@ -1,0 +1,16 @@
+<html>
+<body>
+  Hello world, look at your dev console...
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script>
+
+    $.ajax({
+    url: 'https://api.github.com/repos/operator-framework/community-operators/readme'
+    }).done(response => console.log(response));
+
+  </script>
+</body>
+</html
